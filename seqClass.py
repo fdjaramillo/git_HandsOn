@@ -20,7 +20,9 @@ args.seq = args.seq.upper()
 
 # Classify the sequence
 if re.search('^[ACGTU]+$', args.seq):
-    if re.search('T', args.seq):
+    if re.search('T', args.seq) and re.search('U', args.seq): #line added to mark if seq has both T and U 
+        print ('The sequence is not DNA nor RNA')
+    elif re.search('T', args.seq):
         print ('The sequence is DNA')
     elif re.search('U', args.seq):
         print ('The sequence is RNA')
