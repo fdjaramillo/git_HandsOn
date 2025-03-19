@@ -2,10 +2,6 @@
 
 This script classifies an input sequence as DNA, RNA, or neither. Additionally, it can search for a specified motif within the sequence.
 
-## Requirements
-- Python 3
-- Standard libraries: `sys`, `re`, and `argparse` (included in Python)
-
 ## Usage
 
 Run the script from the command line with the following options:
